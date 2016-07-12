@@ -73,6 +73,10 @@ angular.module('btford.socket-io', []).
           connect: function() {
             return socket.connect();
           },
+          
+          isconnected: function() {
+            return socket.isconnected;
+          },
 
           // when socket.on('someEvent', fn (data) { ... }),
           // call scope.$broadcast('someEvent', data)
