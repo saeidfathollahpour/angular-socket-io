@@ -8,7 +8,7 @@
   "scripts": {
     "test": "./node_modules/.bin/karma start --browsers Firefox --single-run"
   },
-  "author": "Brian Ford",
+  "author": "Yago Silvela",
   "license": "MIT",
   "devDependencies": {
     "angular": "^1.3.5",
