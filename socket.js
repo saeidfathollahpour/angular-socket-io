@@ -1,11 +1,10 @@
 /*
  * @license
  * angular-socket-io v0.7.0
- * (c) 2014 Brian Ford http://briantford.com
- * License: MIT
+ * (c) 2016 Yago Silvela http://yagosilvela.com
  */
 
-angular.module('btford.socket-io', []).
+angular.module('ysilvela.socket-io', []).
   provider('socketFactory', function () {
 
     'use strict';
