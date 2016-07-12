@@ -1,6 +1,6 @@
 /*
  * angular-socket-io v0.4.1
- * (c) 2014 Brian Ford http://briantford.com
+ * (c) 2016 Yago Silvela http://yagosilvela.com
  * License: MIT
  */
 
@@ -9,7 +9,7 @@
 
 describe('socketFactory', function () {
 
-  beforeEach(module('btford.socket-io'));
+  beforeEach(module('ysilvela.socket-io'));
 
   var socket,
       scope,
