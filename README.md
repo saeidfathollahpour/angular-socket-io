@@ -1,15 +1,15 @@
-# angular-socket-io [![Build Status](https://travis-ci.org/btford/angular-socket-io.svg)](https://travis-ci.org/btford/angular-socket-io)
+# angular-socket-io [![Build Status](https://travis-ci.org/ysilvela/angular-socket-io.svg)](https://travis-ci.org/ysilvela/angular-socket-io)
 
 Bower Component for using AngularJS with [Socket.IO](http://socket.io/),
-based on [this](http://briantford.com/blog/angular-socket-io.html).
+based on [this](http://ysilvela.com/blog/angular-socket-io.html).
 
 
 ## Install
 
-1. `bower install angular-socket-io` or [download the zip](https://github.com/btford/angular-socket-io/archive/master.zip).
+1. `bower install angular-socket-io` or [download the zip](https://github.com/ysilvela/angular-socket-io/archive/master.zip).
 2. Make sure the Socket.IO client lib is loaded. It's often served at `/socket.io/socket.io.js`.
 3. Include the `socket.js` script provided by this component into your app.
-4. Add `btford.socket-io` as a module dependency to your app.
+4. Add `ysilvel.socket-io` as a module dependency to your app.
 
 
 ## Usage
@@ -23,7 +23,7 @@ sockets that are integrated with Angular's digest cycle.
 ```javascript
 // in the top-level module of the app
 angular.module('myApp', [
-  'btford.socket-io',
+  'ysilvela.socket-io',
   'myApp.MyCtrl'
 ]).
 factory('mySocket', function (socketFactory) {
@@ -41,7 +41,7 @@ Building on the example above:
 ```javascript
 // in the top-level module of the app
 angular.module('myApp', [
-  'btford.socket-io',
+  'ysilvela.socket-io',
   'myApp.MyCtrl'
 ]).
 factory('mySocket', function (socketFactory) {
@@ -94,7 +94,7 @@ An easy way to make socket error events available across your app:
 ```javascript
 // in the top-level module of the app
 angular.module('myApp', [
-  'btford.socket-io',
+  'ysilvela.socket-io',
   'myApp.MyCtrl'
 ]).
 factory('mySocket', function (socketFactory) {
@@ -115,7 +115,7 @@ angular.module('myApp.MyCtrl', []).
 Avoid duplicating event handlers when a user navigates back and forth between routes:
 
 ```javascript
-angular.module('myMod', ['btford.socket-io']).
+angular.module('myMod', ['ysilvela.socket-io']).
   controller('MyCtrl', function ($scope, socket) {
     socket.forward('someEvent', $scope);
     $scope.$on('socket:someEvent', function (ev, data) {
@@ -132,7 +132,7 @@ This is useful if you want to connect on a different path, or need to hold a ref
 
 ```javascript
 angular.module('myApp', [
-  'btford.socket-io'
+  'ysilvela.socket-io'
 ]).
 factory('mySocket', function (socketFactory) {
   var myIoSocket = io.connect('/some/path');
@@ -202,7 +202,7 @@ Before:
 
 ```javascript
 angular.module('myApp', [
-  'btford.socket-io'
+  'ysilvela.socket-io'
 ]).
 config(function (socketFactoryProvider) {
   socketFactoryProvider.prefix('foo~');
@@ -219,7 +219,7 @@ After:
 
 ```javascript
 angular.module('myApp', [
-  'btford.socket-io'
+  'ysilvela.socket-io'
 ]).
 factory('socket', function (socketFactory) {
   return socketFactory({
@@ -237,7 +237,7 @@ controller('MyCtrl', function (socket) {
 
 ## FAQ
 
-[Closed issues labelled `FAQ`](https://github.com/btford/angular-socket-io/issues?labels=faq&page=1&state=closed) might have the answer to your question.
+[Closed issues labelled `FAQ`](https://github.com/ysilvela/angular-socket-io/issues?labels=faq&page=1&state=closed) might have the answer to your question.
 
 
 ## See Also
